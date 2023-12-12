@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hobbycue</title>
+
+    <!-- favicon linker -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- css linker -->
+    <link rel="stylesheet" href="styles.css"> 
+    
+    <!-- javascript linker -->
+    <script src="app.js"></script>
+
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- google fonts cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- fontAwesome cdn -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img id="brand" src="images/brand.png"></a>
+            <form class="d-flex searchBar">
+                <input class="searchBox" type="search" placeholder="Search here..." aria-label="Search">
+                <button class="searchButton" type="submit"><img src="images/searchButton.png"></button>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-links-icons" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="nav-link-icon" style="margin-right: 3px;" src="images/explore.png">
+                            Explore
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">People - Community</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#">Places - Venues</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#">Programs - Events</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#">Products - Store</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#">Blogs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="nav-link-icon" style="margin-right: 3px;" src="images/hobbies.png">
+                            Hobbies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">The Arts</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#">Playing</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#">Making Things</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#">Activity Participation</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#">Collecting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="nav-link-icon" style="height: 17px;" src="images/bookmark.png"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="nav-link-icon" style="height: 18px;" src="images/bell.png"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="nav-link-icon" src="images/trolley.png"></a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="nav-link-button">Sign In</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- header section -->
+    <div class="header" id="header">
+        <div class="row">
+            <div class="headerCol1 col-lg-8">
+                <h2 style="font-weight: 600;"><i>Explore your <span style="color: #0096C8;">hobby</span> or <span style="color: #8064A2;">passion</span></i></h2>
+                <p style="margin-top: 40px;">Sign-in to interact with a community of fellow hobbyists and an eco-system of experts, teachers, suppliers, classes, workshops, and places to practice, participate or perform. Your hobby may be about visual or performing arts, sports, games, gardening, model making, cooking, indoor or outdoor activities…</p>
+                <p style="margin-top: 10px; margin-bottom: 20px;">If you are an expert or a seller, you can Add your Listing and promote yourself, your students, products,  services or events.  Hop on your hobbyhorse and enjoy the ride.</p>
+                <img class="header-image" src="images/header-image.png">
+            </div>
+            <div class="headerCol2 form col-lg-4">
+                <button type="button" class="formLink formLinkActive"><a style="text-decoration: none;">Sign In</a></button>
+                <button type="button" class="formLink"><a style="text-decoration: none;">Join In</a></button>
+                <button type="button" class="formButton"><a><img class="formButtonIcon" src="images/google.png">Continue with Google</a></button>
+                <button type="button" class="formButton"><a><img class="formButtonIcon" src="images/facebook.png">Continue with Facebook</a></button>
+                <div class="formSaperator">
+                    <hr class="solid"><span class="formSeparatorText">  Or connect with  </span><hr class="solid">
+                </div>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <div class="RememberMe">
+                    <input type="checkbox"> <span>Remember me</span>
+                    <a href=""><img style="height: 16px; margin: 0 5px 5px 0;" class="forgot" src="images/lock.png">Forgot password?</a>
+                </div>
+                <button type="button" class="formButton continueButton"><a style="font-weight: 700;">Continue</a></button>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- listing section -->
+    <div class="listing">
+        <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><img class="cardIcon" src="images/people.png">People</h5>
+                  <p class="card-text">Find a teacher, coach, or expert for your hobby interest in your locality.  Find a partner, teammate, accompanist or collaborator.</p>
+                  <button class="cardButton">Connect</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><img class="cardIcon" src="images/place.png">Place</h5>
+                  <p class="card-text">Find a class, school, playground, auditorium, studio, shop or an event venue.  Book a slot at venues that allow booking through hobbycue.</p>
+                  <button class="cardButton">Meet up</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><img class="cardIcon" src="images/product.png">Product</h5>
+                  <p class="card-text">Find equipment or supplies required for your hobby.  Buy, rent or borrow from shops, online stores or from community members.</p>
+                  <button class="cardButton">Get it</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><img class="cardIcon" src="images/program.png">Program</h5>
+                  <p class="card-text">Find events, meetups and workshops related to your hobby.  Register or buy tickets online.</p>
+                  <button class="cardButton">Attend</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- testimonial section -->
+    <div class="testimonials">
+        <div class="addCard">
+            <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><img class="cardIcon" src="images/add.png">Add your own</h5>
+                    <p class="card-text">Are you a teacher or expert?  Do you sell or rent out equipment, venue or event tickets?  Or, you know someone who should be on hobbycue?  Go ahead and Add your Own page</p>
+                    <button class="cardButton">Add new</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial">
+            <h5><img class="cardIcon" src="images/testimonial.png">Testimonials</h5>
+            <p>In a fast growing and ever changing city like Bangalore, it sometimes becomes very difficult to find or connect with like minded people. Websites like hobbycue.com is a great service which helps me get in touch with, communicate, connect, and exchange ideas with other dancers. It also provides the extra benefit of finding products and services that I can avail, which I can be assured is going to be of great quality as it comes recommended by people of the hobbycue community. To have discussions, to get visibility, and to be able to safely explore various hobbies and activities in my city, all under one roof, is an excellent idea and I highly recommend it.</p>
+            <div class="row">
+                <div class="col-lg-8 col-md-6">
+                    <audio controls>
+                        <source src="horse.ogg" type="audio/ogg">
+                        <source src="horse.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonialProfile">
+                        <img class="testimonialDP" src="images/testimonialDP.png">
+                        <span class="testimonialProfileName">Shubha Nagarajan</span>
+                        <span class="testimonialProfileabout">Classical Dancer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- getStarted section -->
+    <div class="getStarted">
+        <h2 style="font-weight: 600;"><i>Your <span style="color: #8064A2;">Hobby, </span>Your <span style="color: #0096C8;">Community...</span></i></h2>
+        <button>Get started</button>
+        <img src="images/getStarted.png">
+    </div>
+
+    <!-- footer section -->
+    <div class="footer">
+        <div class="row">
+            <div class="footer-options col-lg-6 mb-sm-5">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <ul>
+                            <li style="font-weight: 600; margin-bottom: 20px;">Hobbycue</li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Our Services</a></li>
+                            <li><a href="">Work with Us</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul>
+                            <li style="font-weight: 600; margin-bottom: 20px;">How Do I</li>
+                            <li><a href="">Sign Up</a></li>
+                            <li><a href="">Claim Listing</a></li>
+                            <li><a href="">Post a Query</a></li>
+                            <li><a href="">Add a Blog Post</a></li>
+                            <li><a href="">Other Queries</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul>
+                            <li style="font-weight: 600; margin-bottom: 20px;">Quick Links</li>
+                            <li><a href="">Listings</a></li>
+                            <li><a href="">Blog Posts</a></li>
+                            <li><a href="">Shop / Store</a></li>
+                            <li><a href="">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-sm-5" class="social">
+                <span style="font-weight: 600; margin-bottom: 20px; display: block;">Social Media</span>
+                <a href="" class="footerSM"><img src="images/SMfacebook.png"></a>
+                <a href="" class="footerSM"><img src="images/SMtwitter.png"></a>
+                <a href="" class="footerSM"><img src="images/SMinsta.png"></a>
+                <a href="" class="footerSM"><img src="images/SMprintrest.png"></a>
+                <a href="" class="footerSM"><img src="images/SMgoogleplus.png"></a>
+                <a href="" class="footerSM"><img src="images/SMyoutube.png"></a>
+                <a href="" class="footerSM"><img src="images/SMtelegram.png"></a>
+                <a href="" class="footerSM"><img src="images/SMmail.png"></a>
+                <span style="font-weight: 600; margin-bottom: 20px; margin-top: 20px; display: block;">Invite Friends</span>
+                <form class="d-flex">
+                    <input class="inviteBox" type="search" placeholder="Email Id">
+                    <button class="inviteButton" type="submit"><span>Invite</span></button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">© Purple Cues Private Limited</div>
+    </div>
+
+    <!-- bootstrap javascript cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
