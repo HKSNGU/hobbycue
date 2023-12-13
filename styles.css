@@ -8,7 +8,7 @@ body{
     font-size: 13px !important;
 }
 .navbar-brand>img{
-    width: 220px;
+    height: 45px;
 }
 .searchBar{
     margin: 0 25px;
@@ -38,7 +38,7 @@ body{
     font-weight: 600;
 }
 .dropdown-menu{
-    margin-top: 17px !important;
+    margin-top: 10px !important;
     border-radius: 0 0 8px 8px !important;
 }
 .nav-link-icon{
@@ -51,13 +51,17 @@ body{
     color: #8064A2;
     border: 1.5px solid #8064A2;
     border-radius: 8px;
-    padding: 4px 20px;
+    padding: 5px 15px;
     margin: 4px 20px;
     font-weight: 600;
+    width: 80px;
 }
 .nav-link-button:hover{
     background-color: #8064A2;
     color: #fff;
+}
+.navbar-toggler {
+    border: none !important;
 }
 .header{
     width: 100%;
@@ -74,7 +78,7 @@ body{
 .formLink{
     margin: 0 10px;
     border-style: none;
-    background-color: #fff;
+    background-color: #F7F5F9;
     color: grey;
     font-weight: 600;
     font-size: 16px;
@@ -103,17 +107,16 @@ body{
     background-color: #8064A2;
     color: #fff;
 }
-hr.solid {
-    border-top: 3px solid grey;
-    width: 23%;
-    display: inline-block;
-}
 .formSeparator{
     width: 100%;
     text-align: center;
     font-weight: 600;
     margin-bottom: 10px;
-    margin: auto;
+}
+hr.solid {
+    border-top: 3px solid grey;
+    width: 23%;
+    display: inline-block;
 }
 .formSeparatorText{
     position: relative;
@@ -129,6 +132,7 @@ input[type="email"],[type="password"]{
 }
 .RememberMe{
     margin-top: 15px;
+    font-size: 12px;
 }
 .RememberMe input[type="checkbox"]{
     line-height: normal;
@@ -148,21 +152,57 @@ input[type="email"],[type="password"]{
 .continueButton{
     margin-top: 17px;
     border: 1.5px solid #000;
+    font-weight: 700;
+}
+.continueButton:hover{
+    border: 1.5px solid #8064A2;
 }
 .listing{
     width: 100%;
-    font-size: 14px !important;
-    padding: 100px 70px 0 70px !important;
+    font-size: 14px;
+    padding: 100px 70px 0 70px;
     text-align: center;
 }
 .card{
-    margin: 10px;
-    padding: 30px;
+    margin: 0 auto 20px auto;
+    padding: 25px;
     min-height: 250px;
     text-align: left;
+    border-radius: 8px !important;
+}
+.card1{
+    border: 2px solid #8064A2 !important;
+}
+.card1:hover{
+    background-color: #8064A2 !important;
+    color: white;
+}
+.card2{
+    border: 2px solid #77933C !important;
+}
+.card2:hover{
+    background-color: #77933C !important;
+    color: white;
+}
+.card3{
+    border: 2px solid #C0504D !important;
+}
+.card3:hover{
+    background-color: #C0504D !important;
+    color: white;
+}
+.card4{
+    border: 2px solid #0096C8 !important;
+}
+.card4:hover{
+    background-color: #0096C8 !important;
+    color: white;
 }
 .card-title{
     font-weight: 600;
+}
+.card-text{
+    margin: 20px auto !important;
 }
 .cardIcon{
     height: 24px;
@@ -174,13 +214,13 @@ input[type="email"],[type="password"]{
     color: #8064A2;
     border: 1.5px solid #8064A2;
     border-radius: 8px;
-    padding: 4px 20px;
+    width: 150px;
+    height: 40px;
     margin: 4px 0 0 0;
     font-weight: 600;
 }
-.cardButton:hover{
-    background-color: #8064A2;
-    color: #fff;
+.removeBorder{
+    border-style: none;
 }
 .testimonials{
     margin: 100px 70px 0 70px;
@@ -191,6 +231,10 @@ input[type="email"],[type="password"]{
     margin: 100px 10px 0 10px;
     padding: 30px;
     text-align: left;
+}
+.addCardButton:hover{
+    background-color: #8064A2;
+    color: #fff;
 }
 .testimonial>p{
     margin-top: 25px;
@@ -241,6 +285,10 @@ audio{
     margin-bottom: 50px;
     text-decoration: none;
 }
+.getStarted button:hover{
+    border: 1.5px solid #694d8c;
+    background-color: #694d8c;
+}
 .getStarted img{
     width: 100%;
 }
@@ -289,16 +337,139 @@ li a{
     font-size: 14px;
     font-weight: 600;
 }
-.up{
-    position: sticky;
+.grey{
+    color: grey;
 }
 
 @media only screen and (max-width: 800px) {
+    .navbar{
+        padding: 0 30px !important;
+    }
+    .searchBar{
+        margin: 0 5px;
+        margin-left: auto;
+    }
     .searchBox{
         display: none !important;
     }
     .searchButton{
         border-radius: 8px;
     }
+    .nav-links-icons{
+        text-align: center !important;
+    }
+    .dropdown-menu{
+        margin-top: 10px !important;
+        border-radius: 0 0 8px 8px !important;
+    }
+    .nav-link-button{
+        border-style: none;
+        background-color: #fff;
+        color: #8064A2;
+        border: 1.5px solid #8064A2;
+        border-radius: 8px;
+        padding: 4px 20px;
+        margin: 4px 20px;
+        font-weight: 600;
+    }
+    .nav-link-button:hover{
+        background-color: #8064A2;
+        color: #fff;
+    }
+    .navbar-toggler {
+        border: none !important;
+    }
+    .header{
+        margin: 0;
+        padding: 0 45px !important;
+        background-color: #F7F5F9;
+    }
+    .headerCol1{
+        padding: 100px 15px !important;
+        margin: auto;
+    }
+    .headerCol2{
+        padding: 100px 15px !important;
+        text-align: center;
+        margin: auto;
+    }
+    .RememberMe{
+        margin-top: 15px;
+        font-size: 12px;
+        text-align: left;
+    }
+    .listing{
+        width: 100%;
+        font-size: 14px;
+        padding: 100px 45px 0 45px;
+        text-align: center;
+    }
+    .card{
+        margin: 0 auto 20px auto !important;
+        padding: 15px;
+        text-align: center;
+    }
+    .cardButton{
+        width: 100%;
+    }
+    .testimonials{
+        margin: 100px 30px 0 30px;
+    }
+    .addCard{
+        margin: 0 15px !important;
+    }
+    .testimonial{
+        margin: 0 15px !important;
+        text-align: center;
+    }
+    .testimonial>p{
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+    audio{
+        margin-bottom: 20px;
+    }
+    .testimonialProfile{
+        width: 100%;
+        padding-left: 0;
+        text-align: left;
+    }
+    .getStarted{
+        width: 100%;
+        padding: 100px 45px 30px 45px;
+        margin-bottom: 50px;
+    }
+    .footer{
+        width: 100%;
+        padding: 100px 45px 30px 45px;
+        text-align: center;
+    }
+    ul{
+        margin-bottom: 50px !important;
+        padding: 0 !important;
+        
+    }
+    .footerSM{
+        width: 10px;
+        margin: 10px;
+    }
+    .inviteButton{
+        border-style: none;
+        background-color: #8064A2;
+        box-shadow: 0 0 1px lightgrey;
+        border-radius: 0 8px 8px 0;
+        padding: 0 10px;
+        height: 50px;
+        color: #fff;
+    }
+    .copyright{
+        background-color: #F7F5F9;
+        width: 100%;
+        margin: 0;
+        padding: 15px 0 5px 0;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }  
+    
 }
-  
